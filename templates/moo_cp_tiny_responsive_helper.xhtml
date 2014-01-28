@@ -1,0 +1,17 @@
+<?php $GLOBALS['TL_CSS'][] = 'system/modules/cp_tiny_responsive_helper/assets/cp_tiny_responsive_helper.css'; ?>
+
+<script type="text/javascript">
+	var timer;
+	window.addEvent('domready', function(){
+		var div = $('responsive_helper');
+		window.addEvent('resize', function(){
+			clearTimeout(timer);
+			timer = (function(){
+		    	var size = window.getSize();
+				div.set({html: size.x + 'px x ' + size.y + 'px'})
+			}).delay(50);
+		});
+	})
+</script>
+
+<div id="responsive_helper"></div>

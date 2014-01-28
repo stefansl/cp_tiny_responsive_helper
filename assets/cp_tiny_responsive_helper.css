@@ -1,0 +1,12 @@
+#responsive_helper{
+	position: absolute; 
+	top: 5px; 
+	left: 5px;
+	width: 120px; 
+	text-align: center; 
+	height:15px; 
+	padding: 3px; 
+	background-color: rgba(229,229,229,0.8); 
+	border: 1px solid #ccc;
+	font-size: 9px;	
+}

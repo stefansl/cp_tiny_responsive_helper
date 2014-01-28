@@ -1,0 +1,13 @@
+<?php $GLOBALS['TL_CSS'][] = 'system/modules/cp_tiny_responsive_helper/assets/cp_tiny_responsive_helper.css'; ?>
+
+<script type="text/javascript">
+$(function(){
+	var div = $('#responsive_helper');
+    var doc = $(window);
+    $(window).resize(function(){
+    	div.text(doc.width() + 'px x ' + doc.height() + 'px');
+    });
+});
+</script>
+
+<div id="responsive_helper"></div>
